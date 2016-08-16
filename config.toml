@@ -2,7 +2,7 @@
 paginate = 10
 
 # Enable comments powered by Disqus by entering your disqus shortname
-disqusShortname = "pascallemerrer"
+disqusShortname = "pascals-dev-blog"
 theme = "minimalist"
 
 baseurl = "https://PascalLeMerrer.github.io/blog/"
@@ -18,7 +18,7 @@ PygmentsCodeFences = true
 
 
 layoutdir = "layouts"
-publishdir = "dist"
+publishdir = "public"
 
 
 # Allow tags with spaces and special chars
