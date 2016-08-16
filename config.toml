@@ -5,7 +5,7 @@ paginate = 10
 disqusShortname = "pascallemerrer"
 theme = "minimalist"
 
-baseurl = "https://PascalLeMerrer.github.io/blog/public/"
+baseurl = "https://PascalLeMerrer.github.io/blog/"
 # required for publication on Github
 canonifyurls = true
 
