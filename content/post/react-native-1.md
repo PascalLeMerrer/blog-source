@@ -1,7 +1,7 @@
 +++
 date = "2016-08-15T00:18:02+02:00"
 categories = [ "Development" ]
-tags = [ "Development", "Tutorial", "Mobile", "React" ]
+tags = [ "Development", "Tutorial", "Mobile", "React", "React Native" ]
 series = [ "React Native"]
 title = "Creating a mobile application with React Native - part 1"
 +++
