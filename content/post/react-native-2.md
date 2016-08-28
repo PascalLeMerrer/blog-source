@@ -1,10 +1,9 @@
 +++
-date = "2016-08-18T20:54:34+02:00"
+date = "2016-08-28T21:54:34+02:00"
 categories = [ "Development" ]
 tags = [ "Development", "Tutorial", "Mobile", "React", "React Native" ]
 series = [ "React Native"]
 title = "Creating a mobile application with React Native - part 2"
-draft = true
 +++
 
 This article is the second in a series started with [Creating a mobile application with React Native - part 1]({{< ref "post/react-native-1.md" >}}).
@@ -18,15 +17,15 @@ With Native Base you have much less boilerplate code to write than with React Na
 
 
 
-First thing first, we download NativeBase and add it to the dependencies in package.json:
+First thing first, download NativeBase and add it to the dependencies in package.json:
 ``` bash
 cd AwesomeNativeBase
 npm install native-base --save
 ```
 
-Then we include the icon fonts provided by React Native into the app:
+Then, includeinto the app the icon fonts provided by React Native:
 ```
-mkdir android/app/src/main/assets/fonts
+mkdir android/apps/src/main/assets/fonts
 cp node_modules/react-native-vector-icons/Fonts/*.ttf android/app/src/main/assets/fonts/
 ```
 
@@ -44,7 +43,7 @@ Edit `android/app/build.gradle` and add the following line to the `dependencies`
 compile project(':react-native-vector-icons')
 ```
 
-Finally build the app.
+Finally build the app:
 
 ```
 npm run build
@@ -52,7 +51,7 @@ npm run build
 
 ## Create a Native Base GUI
 
-Replace the content of `index.android.js with:
+Replace the content of `index.android.js` with:
 
 ``` html
 import React, { Component } from 'react';
@@ -80,9 +79,9 @@ class AwesomeNativeBase extends Component {
 AppRegistry.registerComponent('AwesomeNativeBase', () => AwesomeNativeBase);
 ```
 The import directives list all the React, React Native and NativeBase components used.
-Several React Native basic components are replaced by their Native Base counterpart in the render function.
+Several React Native basic components are replaced by their Native Base counterparts in the render function.
 
-You should be able to run the app and see the Hello World! message under the header.
+You should be able to run the app and see the "Hello World!" message under the header.
 Refer to the [first part]({{< ref "post/react-native-1.md" >}}) if you need some explanation to run it.
 
 
@@ -156,9 +155,9 @@ If you reload the app, it should look like this:
 
 ## Install Superagent
 
-[Fetch](https://facebook.github.io/react-native/docs/network.html) is the default API in React Native for making HTTP request. It's still in experimental status, and I had an annoying bug with it: the request was not executed unless I tap the device screen. So I replaced it with a more mature library, [Superagent](http://visionmedia.github.io/superagent/).
+[Fetch](https://facebook.github.io/react-native/docs/network.html) is the default API in React Native for making HTTP requests. It's still in experimental status, so maybe that's why I had an annoying bug with it: the request was not executed unless I tap the device screen. So I replaced it with a more mature library, [Superagent](http://visionmedia.github.io/superagent/).
 
-Integrating Superagent in a ReactNative app is dead simple. First you download it and add it to the dependencies of the project:
+Integrating Superagent in a ReactNative app is dead simple. First download it and add it to the dependencies of the project:
 
 ```
 npm install superagent --save
@@ -170,9 +169,9 @@ Then you add this line to albumlist.js, just after the imports:
 var superagent = require('superagent');
 ```
 
-That's all! Now you are ready to make HTTP requests.
+That's all! Now we are ready to make HTTP requests.
 
-Now replace the constructor into `albumlist.js` by these three functions:
+Replace the constructor into `albumlist.js` by these three functions:
 
 ``` javascript
     constructor(props) {
@@ -236,7 +235,7 @@ Now replace the render function with the following code:
     }
 ```
 
-This new implementation displays a spinner during the request execution. After the response is received, it hides the spinner and replace it with a list of albums, represented by their cover and title.
+This new implementation displays a spinner during the request execution. After the response is received, it hides the spinner and replaces it with a list of albums, represented by their cover and title.
 
 {{< img src="/post/img/react-native-2/screenshot_3.png" >}}
 
@@ -246,10 +245,10 @@ The source code for the app is available [on Github](https://github.com/PascalLe
 
 At this stage my feelings about React Native are mixed:
 
-* it produces very easily a working application, and until now I did not require any knowledge about Android development (although it won't prevent me to learn Google's guidelines to create an app with a good UX);
+* it produces very easily a working application, and until now It did not require from me any knowledge about Android development (although it won't prevent me to learn Google's guidelines to create an app with a good UX);
 * the Fetch API seems buggy;
-* the error messages of the compiler often left me without any clue about what is causing them;
-* sometimes the error messages appears in the app, sometimes in the terminal running the packager (which I tend to forget as it runs in background).
+* React error messages often left me without any clue about what is causing them;
+* sometimes the error messages appears in the app, sometimes in the terminal running the packager (which I tend to forget as it runs in background) ; sometimes I even have to stop the packager to make the message appear in the app.
 
 To sum up, the result looks very good (by now), but the tooling is still immature, which is understandable for a rather young technology.
 
