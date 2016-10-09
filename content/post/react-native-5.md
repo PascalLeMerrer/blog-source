@@ -1,9 +1,8 @@
 +++
-date = "2016-08-20T16:24:44+02:00"
+date = "2016-10-09T10:24:44+02:00"
 tags = [ "Development", "Tutorial", "Mobile", "React", "React Native" ]
 series = [ "React Native"]
 title = "Creating a mobile application with React Native - part 5"
-draft = true
 
 +++
 
@@ -110,7 +109,8 @@ Here is the final code:
 
 ## Conclusion
 
-React Native provides a simple way to reproduce this Android common feature.
+Not so much to say on this part...
+React Native provides a simple way to reproduce this Android basic feature.
 
 In the suite of these series, I will stop adding features to the app.
 Now, it's about time building an iOS version!
