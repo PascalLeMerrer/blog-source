@@ -1,9 +1,8 @@
 +++
-date = "2016-08-20T00:12:11+02:00"
+date = "2016-09-13T00:08:30+02:00"
 tags = [ "Development", "Tutorial", "Mobile", "React", "React Native" ]
 series = [ "React Native"]
 title = "Creating a mobile application with React Native - part 4"
-draft = true
 
 +++
 
