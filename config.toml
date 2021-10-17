@@ -3,7 +3,7 @@ paginate = 10
 
 # Enable comments powered by Disqus by entering your disqus shortname
 disqusShortname = "pascals-dev-blog"
-theme = "minimalist"
+theme = "hugo-minimalist-theme"
 
 baseurl = "https://PascalLeMerrer.github.io/blog/"
 # required for publication on Github
@@ -35,7 +35,7 @@ preserveTaxonomyNames = true
     location = "Somewhere on Earth"
     # All paths are relative to the baseurl. Put your files
     # somewhere in the static folder.
-    avatar = "img/profile-image.jpg"
+    avatar = "img/profile-image-128x128.jpeg"
     header_background = "img/header.jpg"
     header_title = "Pascal's Dev Blog"
     copyright = "Powered by [Hugo](http://gohugo.io). All contents licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)"

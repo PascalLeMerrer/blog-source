@@ -1,5 +1,5 @@
 +++
-date = "2016-08-21T19:57:49+02:00"
+date = "2016-10-21T19:57:49+02:00"
 tags = []
 title = "Creating a mobile application with React Native - part 6"
 draft = true
